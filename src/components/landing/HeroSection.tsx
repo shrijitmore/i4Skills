@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
@@ -14,7 +14,7 @@ const HeroSection = ({
   headline = "Transform Your Future with Data Learning",
   subheadline = "Discover a new dimension of education with personalized learning paths, real-time feedback, and interactive content tailored to your unique potential.",
   ctaText = "Begin Your Journey",
-  onCtaClick = () => console.log("CTA clicked"),
+  onCtaClick = () => window.location.href = "http://localhost/login/signup.php",
 }: HeroSectionProps) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const heroRef = useRef<HTMLDivElement>(null);
@@ -292,6 +292,7 @@ const HeroSection = ({
               repeat: Infinity,
               repeatType: "loop",
             }}
+            className="rounded-full"
           >
             <Button
               size="lg"
