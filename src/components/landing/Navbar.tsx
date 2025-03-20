@@ -62,8 +62,8 @@ const Navbar = ({ onSectionClick = () => {} }: NavbarProps) => {
             {[
               { name: "Home", section: "hero" },
               { name: "Courses", section: "courses" },
-              { name: "Features", section: "features" },
-              { name: "AI Assistant", section: "assistant" },
+              { name: "Virtual Lab", section: "features" },
+              { name: "Platform Features", section: "assistant" },
               { name: "Testimonials", section: "testimonials" },
               { name: "About", section: "about" },
               { name: "Contact", section: "contact" },

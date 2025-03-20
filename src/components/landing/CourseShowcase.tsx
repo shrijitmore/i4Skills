@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import CourseCard from "./CourseCard";
-import { preloadImages } from "../../lib/preloadImages";
+
 
 interface CourseShowcaseProps {
   title?: string;

@@ -36,7 +36,7 @@ const CourseCard = ({
   skillLevel = "Intermediate",
   duration = "8 weeks",
   rating = 4.8,
-  enrolledStudents = 1245,
+  // enrolledStudents = 1245,
 }: CourseCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -141,10 +141,10 @@ const CourseCard = ({
                 <span className="font-medium">{duration}</span>
               </div>
               <div className="flex items-center">
-                <span className="text-gray-500 mr-2">Students:</span>
+                {/* <span className="text-gray-500 mr-2">Students:</span>
                 <span className="font-medium">
                   {enrolledStudents.toLocaleString()}
-                </span>
+                </span> */}
               </div>
             </div>
           </motion.div>

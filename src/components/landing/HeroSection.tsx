@@ -132,24 +132,12 @@ const HeroSection = ({
   }));
 
   return (
-    <motion.div
-      ref={heroRef}
-      className="relative w-full h-[700px] overflow-hidden flex items-center justify-center px-6"
-      style={{ backgroundSize: "400% 400%" }}
-      animate={backgroundControls}
-      initial={{ backgroundPosition: "0% 0%" }}
-    >
+    <div className="relative w-full h-[700px] flex items-center justify-center px-6 bg-gradient-to-br from-[#6a11cb] to-[#2575fc]">
       <motion.div
+        ref={heroRef}
         className="absolute inset-0 bg-gradient-to-br from-[#050510] via-[#1A0520] to-[#300A25] z-0"
-        animate={{
-          opacity: [0.9, 1, 0.9],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
+        animate={backgroundControls}
+        initial={{ backgroundPosition: "0% 0%" }}
       />
 
       <motion.div
@@ -267,7 +255,7 @@ const HeroSection = ({
         </motion.div>
 
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00AAAA] via-[#AA00AA] to-[#AA8800] mb-6 leading-tight"
+          className="text-4xl md:text-5xl lg:text-7xl font-bold text-white bg-clip-text bg-gradient-to-r from-[#00AAAA] via-[#AA00AA] to-[#AA8800] mb-6 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -315,7 +303,7 @@ const HeroSection = ({
           </motion.div>
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
