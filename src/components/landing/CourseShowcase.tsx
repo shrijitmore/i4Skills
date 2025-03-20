@@ -25,91 +25,74 @@ interface CourseShowcaseProps {
 
 const CourseShowcase = ({
   title = "Explore Our Featured Courses",
-  subtitle = "Discover top-rated courses designed to enhance your skills with AI-powered learning experiences",
+  subtitle = "Discover top-rated courses designed to enhance your skills in data engineering and digital transformation",
   courses = [
     {
       id: "1",
-      title: "Advanced Machine Learning with Python",
+      title: "Automation and Data Integration",
       description:
-        "Learn cutting-edge machine learning techniques and implement them using Python and popular frameworks like TensorFlow and PyTorch.",
+        "Master data integration techniques and automation processes using industry-leading ETL tools, SSIS packages, and workflow optimization strategies.",
       thumbnail:
-        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=500&q=80",
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&q=80",
       instructor: {
-        name: "Dr. Sarah Johnson",
-        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
-        title: "AI Research Scientist",
+        name: "David Miller",
+        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
+        title: "Data Integration Specialist",
       },
       skillLevel: "Intermediate",
-      duration: "8 weeks",
+      duration: "10 weeks",
       rating: 4.8,
       enrolledStudents: 1245,
     },
     {
       id: "2",
-      title: "Web Development Bootcamp 2023",
+      title: "Data Engineering",
       description:
-        "A comprehensive course covering HTML, CSS, JavaScript, React, and Node.js to build modern, responsive web applications.",
-      thumbnail:
-        "https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&q=80",
-      instructor: {
-        name: "Alex Rodriguez",
-        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=alex",
-        title: "Senior Web Developer",
-      },
-      skillLevel: "Beginner",
-      duration: "12 weeks",
-      rating: 4.9,
-      enrolledStudents: 2389,
-    },
-    {
-      id: "3",
-      title: "Data Science Fundamentals",
-      description:
-        "Master the essential skills of data analysis, visualization, and statistical modeling to extract meaningful insights from complex datasets.",
+        "Comprehensive training on building robust data pipelines, implementing data warehousing solutions, and optimizing data flows for enterprise applications.",
       thumbnail:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80",
       instructor: {
-        name: "Dr. Michael Chen",
-        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=michael",
-        title: "Data Science Director",
+        name: "Dr. Rebecca Chen",
+        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=rebecca",
+        title: "Lead Data Engineer",
       },
-      skillLevel: "Beginner",
-      duration: "10 weeks",
+      skillLevel: "Advanced",
+      duration: "12 weeks",
+      rating: 4.9,
+      enrolledStudents: 987,
+    },
+    {
+      id: "3",
+      title: "Digital Champion Program",
+      description:
+        "Become a digital transformation leader with skills in change management, technology adoption, and implementing digital solutions across organizations.",
+      thumbnail:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80",
+      instructor: {
+        name: "James Wilson",
+        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=james",
+        title: "Digital Transformation Director",
+      },
+      skillLevel: "Intermediate",
+      duration: "8 weeks",
       rating: 4.7,
-      enrolledStudents: 1876,
+      enrolledStudents: 1124,
     },
     {
       id: "4",
-      title: "Advanced Cloud Architecture",
+      title: "Data Specialist Program",
       description:
-        "Design and implement scalable, secure, and resilient cloud solutions using AWS, Azure, and Google Cloud Platform.",
+        "Specialized training for data professionals covering Power BI dashboard creation, DAX measures, data modeling, and advanced analytics techniques.",
       thumbnail:
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
       instructor: {
-        name: "Jennifer Williams",
-        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=jennifer",
-        title: "Cloud Solutions Architect",
+        name: "Sarah Johnson",
+        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
+        title: "Senior Data Specialist",
       },
-      skillLevel: "Advanced",
-      duration: "8 weeks",
+      skillLevel: "Beginner",
+      duration: "10 weeks",
       rating: 4.9,
-      enrolledStudents: 943,
-    },
-    {
-      id: "5",
-      title: "UX/UI Design Masterclass",
-      description:
-        "Learn the principles of user experience and interface design to create intuitive, engaging, and accessible digital products.",
-      thumbnail:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80",
-      instructor: {
-        name: "Emma Thompson",
-        avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=emma",
-        title: "Senior UX Designer",
-      },
-      skillLevel: "Intermediate",
-      duration: "6 weeks",
-      rating: 4.8,
       enrolledStudents: 1532,
     },
   ],

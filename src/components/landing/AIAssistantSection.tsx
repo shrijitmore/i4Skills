@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { BookOpen, BarChart, Award, MessageCircle } from "lucide-react";
+import { BookOpen, BarChart, Award, MessageCircle, Code } from "lucide-react";
 import { Card } from "../ui/card";
 
-const AIAssistantSection = () => {
+const PlatformFeaturesSection = () => {
   const features = [
     {
       icon: <BookOpen className="h-10 w-10 text-indigo-600" />,
       title: "Personalized Learning Paths",
       description:
-        "Tailored learning experiences that adapt to your skill level, goals, and progress. Our AI-powered system creates a unique journey for each learner.",
+        "Tailored learning experiences that adapt to your skill level, goals, and progress. Our system creates a unique journey for each learner.",
     },
     {
       icon: <BarChart className="h-10 w-10 text-indigo-600" />,
@@ -28,6 +28,12 @@ const AIAssistantSection = () => {
       title: "Support & Communication",
       description:
         "Connect with instructors and peers through our community platform. Get help when you need it and build your professional network.",
+    },
+    {
+      icon: <Code className="h-10 w-10 text-indigo-600" />,
+      title: "Simultaneous Learning & Hands-On",
+      description:
+        "Learn theory and practice simultaneously with our innovative approach. Apply concepts in real-time through interactive coding environments and practical exercises.",
     },
   ];
 
@@ -109,4 +115,4 @@ const AIAssistantSection = () => {
   );
 };
 
-export default AIAssistantSection;
+export default PlatformFeaturesSection;
