@@ -51,15 +51,8 @@ const Navbar = ({ onSectionClick = () => {} }: NavbarProps) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <span
-                className={`${isScrolled ? "text-indigo-900" : "text-white"}`}
-              >
-                I4
-              </span>
-              <span
-                className={`${isScrolled ? "text-indigo-600" : "text-indigo-300"}`}
-              >
-                skills
+              <span>
+                <img src="/logo.png" alt="Logo"/>
               </span>
             </motion.div>
           </div>

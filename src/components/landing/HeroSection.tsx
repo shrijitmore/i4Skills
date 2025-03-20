@@ -11,7 +11,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  headline = "Transform Your Future with AI-Powered Learning",
+  headline = "Transform Your Future with Data Learning",
   subheadline = "Discover a new dimension of education with personalized learning paths, real-time feedback, and interactive content tailored to your unique potential.",
   ctaText = "Begin Your Journey",
   onCtaClick = () => console.log("CTA clicked"),
