@@ -83,6 +83,7 @@ const Navbar = ({ onSectionClick = () => {} }: NavbarProps) => {
           <div className="hidden md:block">
             <Button
               className={`${isScrolled ? "bg-indigo-600 hover:bg-indigo-700 text-white" : "bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white border border-white/30"}`}
+              onClick={() => window.location.href = "http://localhost/login/signup.php"}
             >
               Sign Up Free
             </Button>
@@ -129,9 +130,15 @@ const Navbar = ({ onSectionClick = () => {} }: NavbarProps) => {
               </button>
             ))}
             <div className="pt-2">
-              <Button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white">
+              <button
+                type="button"
+                onClick={() => {
+                  console.log("Button clicked!");
+                  window.location.href = "http://localhost/login/signup.php";
+                }}
+              >
                 Sign Up Free
-              </Button>
+              </button>
             </div>
           </div>
         </motion.div>
