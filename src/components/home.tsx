@@ -3,7 +3,6 @@ import Navbar from "./landing/Navbar";
 import HeroSection from "./landing/HeroSection";
 import CourseShowcase from "./landing/CourseShowcase";
 import VirtualLabDemo from "./landing/VirtualLabDemo";
-import SimultaneousLearningSection from "./landing/SimultaneousLearningSection";
 import AIAssistantSection from "./landing/AIAssistantSection";
 import TestimonialsSection from "./landing/TestimonialsSection";
 import AboutSection from "./landing/AboutSection";
@@ -13,7 +12,6 @@ function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const coursesRef = useRef<HTMLDivElement>(null);
   const featuresRef = useRef<HTMLDivElement>(null);
-  const simultaneousRef = useRef<HTMLDivElement>(null);
   const assistantRef = useRef<HTMLDivElement>(null);
   const testimonialsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -37,10 +35,6 @@ function Home() {
 
       <div id="features" ref={featuresRef}>
         <VirtualLabDemo />
-      </div>
-
-      <div id="simultaneous" ref={simultaneousRef}>
-        <SimultaneousLearningSection />
       </div>
 
       <div id="assistant" ref={assistantRef}>
